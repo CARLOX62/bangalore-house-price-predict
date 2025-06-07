@@ -1,78 +1,149 @@
 # 🏠 Bangalore House Price Prediction
 
-This project predicts house prices in Bangalore using machine learning models. It uses historical housing data and features like location, square footage, number of bathrooms, and more to estimate the price of a property.
+This is a machine learning web application that predicts **house prices in Bangalore**, India based on key features like **location**, **square footage**, **number of bedrooms**, and **bathrooms**. The model uses historical housing data and Ridge Regression for robust predictions.
+
+<p align="center">
+  <img src="https://img.shields.io/github/languages/top/CARLOX62/bangalore-house-price-predict" alt="Top Language">
+  <img src="https://img.shields.io/github/last-commit/CARLOX62/bangalore-house-price-predict" alt="Last Commit">
+  <img src="https://img.shields.io/github/repo-size/CARLOX62/bangalore-house-price-predict" alt="Repo Size">
+</p>
+
+---
+
+## 🌐 Live Demo
+
+🔗 **Try the App**:(http://localhost:8501/)  
+
+---
+
+## 📸 App Screenshot
+
+![Screenshot (59)](https://github.com/user-attachments/assets/63fdd111-fec8-441b-a3a0-c35ff94916ed)
+
 
 ---
 
 ## 📂 Project Structure
 
+```
 .
-├── BHP.csv # Original dataset
-├── Cleaned_data.csv # Cleaned dataset after preprocessing
-├── main.py # Main Python script for training and predicting
-├── price.ipynb # Jupyter Notebook for EDA and modeling
-├── RidgeModel.pkl # Trained Ridge Regression model
-└── background.jpg # Optional background image
-
+├── BHP.csv               # Original dataset
+├── Cleaned_data.csv      # Cleaned and processed dataset
+├── main.py               # Core Python script (model & prediction)
+├── price.ipynb           # Jupyter Notebook for EDA & model training
+├── RidgeModel.pkl        # Trained Ridge Regression model (serialized)
+├── background.jpg        # Background image (optional for UI)
+├── requirements.txt      # Python dependencies
+└── README.md             # This file
+```
 
 ---
 
-## 🚀 Getting Started
+## 🧠 Key Features
 
-1️⃣ Clone the repository
+✅ Built with **Python** and **Scikit-learn**  
+✅ Data preprocessing and cleaning  
+✅ Outlier handling and dimensionality reduction  
+✅ Trained **Ridge Regression model**  
+✅ Easy predictions using pre-trained model  
+✅ Optional background visuals for UI enhancement
+
+---
+
+## ⚙️ Getting Started
+
+### 1️⃣ Clone the repository
 
 ```bash
 git clone https://github.com/CARLOX62/bangalore-house-price-predict.git
 cd bangalore-house-price-predict
+```
 
-2️⃣ Install Dependencies
+### 2️⃣ Install dependencies
 
+If `requirements.txt` exists:
+
+```bash
 pip install -r requirements.txt
-Note: If no requirements.txt, manually install libraries like pandas, numpy, scikit-learn, etc
+```
 
-3️⃣ Run the Project
+Otherwise, install manually:
 
-You can either:
+```bash
+pip install pandas numpy scikit-learn matplotlib seaborn
+```
 
- 1. Run the Jupyter Notebook (price.ipynb) for exploratory data analysis and visualization.
- 2. Or run the main script:
-    python main.py
+### 3️⃣ Run the Project
 
-📊 Features
+**Option A**: Use the Jupyter Notebook for EDA:
 
-✅ Data cleaning and preprocessing
-✅ Exploratory data analysis
-✅ Model training (e.g. Ridge Regression)
-✅ Price prediction using trained model
-✅ Visualizations (optional)
+```bash
+jupyter notebook price.ipynb
+```
 
-🛠️ Usage
+**Option B**: Run the main script (console-based or can be modified for web UI):
 
- 1. Update the dataset (Cleaned_data.csv) if needed.
- 2. Retrain the model using main.py or reuse the existing model (RidgeModel.pkl).
- 3.Predict new prices.
-
-📝 Notes
-
-  1. The .ipynb_checkpoints/ folder contains notebook auto-saves (ignore).
-  2. .pkl is a serialized model using Python’s pickle
-
-📧 Contact
-
-For questions, please open an issue or contact me at [aniketsonukumar62@gmail.com].
+```bash
+python main.py
+```
 
 ---
 
-### How to Apply This
+## 🛠️ How to Use
 
-1️⃣ Open your `README.md` file.  
-2️⃣ Paste this improved Markdown.  
-3️⃣ Save the file.  
-4️⃣ Add, commit, and push:
+1. Modify `Cleaned_data.csv` with your own housing dataset if needed.
+2. Re-train the model using `main.py` or reuse the existing model (`RidgeModel.pkl`).
+3. Make predictions based on new inputs using the script or build a web interface (Streamlit, Flask, etc.).
 
-```bash
-git add README.md
-git commit -m "Update README formatting"
-git push
+---
+
+## 📊 Model and Dataset Info
+
+- 🗃 **Dataset Source**: Kaggle/Bangalore Housing Dataset
+- 📉 Model Used: **Ridge Regression**
+- 🔢 Features Used:
+  - Total square feet
+  - Location (converted using encoding)
+  - Number of bathrooms
+  - Number of bedrooms (BHK)
+
+---
+
+## 📈 Output Example
+
+```
+Location: Electronic City Phase II
+Sqft: 1000
+Bath: 2
+BHK: 3
+
+Predicted Price: ₹ 56.2 Lakhs
+
+![Screenshot (60)](https://github.com/user-attachments/assets/1c9466bc-67ad-4d32-aa7d-30c58dc83d0e)
+
+```
+
+---
+
+## 📝 Notes
+
+- `.ipynb_checkpoints/` contains autosaves — can be ignored.
+- `RidgeModel.pkl` is a serialized ML model.
+- No frontend UI is integrated yet — can be extended using Flask or Streamlit.
+
+---
+
+## 📧 Contact
+
+📩 Email: [aniketkumarsonu62@gmail.com](mailto:aniketkumarsonu62@gmail.com)  
+🔗 GitHub: [CARLOX62](https://github.com/CARLOX62)
+
+---
+
+## ✅ Contribution
+
+Pull requests are welcome! For major changes, please open an issue first.
+
+---
 
 
