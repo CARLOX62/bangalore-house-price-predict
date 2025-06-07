@@ -12,9 +12,6 @@ This project predicts house prices in Bangalore using machine learning models. I
 ├── RidgeModel.pkl # Trained Ridge Regression model
 └── background.jpg # Background image for visuals (optional)
 
-bash
-Copy
-Edit
 
 ## 🚀 Getting Started
 
@@ -22,10 +19,9 @@ Edit
 ```bash
 git clone https://github.com/CARLOX62/bangalore-house-price-predict.git
 cd bangalore-house-price-predict
+
+
 2️⃣ Install Dependencies
-bash
-Copy
-Edit
 pip install -r requirements.txt
 (Optional: If no requirements.txt, manually install libraries like pandas, numpy, scikit-learn, etc.)
 
