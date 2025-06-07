@@ -64,4 +64,21 @@ The .ipynb_checkpoints/ folder contains auto-saved notebook checkpoints and can 
 .pkl file is a serialized machine learning model using Python’s pickle.
 
 📧 Contact
-For questions or suggestions, please open an issue or contact me at [your_email@example.com].
+For questions or suggestions, please open an issue or contact me at [aniketsonukumar62@gmail.com].
+
+yaml
+Copy
+Edit
+
+---
+
+### ✅ How to add this to GitHub
+
+1️⃣ Create a file called `README.md` in the root of your local repo.  
+2️⃣ Paste the Markdown code above into it.  
+3️⃣ Save the file.  
+4️⃣ Stage and commit:
+```bash
+git add README.md
+git commit -m "Add README file with project overview"
+git push
