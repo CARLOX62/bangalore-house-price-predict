@@ -119,7 +119,8 @@ BHK: 3
 
 Predicted Price: ₹ 56.2 Lakhs
 
-![Screenshot (60)](https://github.com/user-attachments/assets/1c9466bc-67ad-4d32-aa7d-30c58dc83d0e)
+![Screenshot (60)](https://github.com/user-attachments/assets/fa36220e-1eec-444e-ba75-35a5fa46f368)
+
 
 ```
 
